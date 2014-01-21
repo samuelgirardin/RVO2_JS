@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{0F845684-4C61-4F46-9085-FAEFF0487626}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="ACreateJS\create\createjs.d.ts" />
+    <TypeScriptCompile Include="ACreateJS\create\easeljs.d.ts" />
+    <TypeScriptCompile Include="ACreateJS\create\preloadjs.d.ts" />
+    <TypeScriptCompile Include="ACreateJS\create\soundjs.d.ts" />
+    <TypeScriptCompile Include="ACreateJS\create\tweenjs.d.ts" />
+    <TypeScriptCompile Include="RVO2\Line.ts" />
+    <TypeScriptCompile Include="RVO2\KeyValuePair.ts" />
+    <TypeScriptCompile Include="RVO2\KdTree.ts" />
+    <TypeScriptCompile Include="RVO2\AgentTreeNode.ts" />
+    <TypeScriptCompile Include="ACreateJS\app.ts" />
+    <Content Include="ACreateJS\app.js">
+      <DependentUpon>app.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="ACreateJS\AssetsManager.ts" />
+    <Content Include="ACreateJS\AssetsManager.js">
+      <DependentUpon>AssetsManager.ts</DependentUpon>
+    </Content>
+    <Content Include="ACreateJS\assets\back.png" />
+    <Content Include="ACreateJS\assets\j0.png" />
+    <TypeScriptCompile Include="ACreateJS\Constants.ts" />
+    <Content Include="ACreateJS\Constants.js">
+      <DependentUpon>Constants.ts</DependentUpon>
+    </Content>
+    <Content Include="ACreateJS\createjs-2013.12.12.min.js" />
+    <TypeScriptCompile Include="ACreateJS\Game.ts" />
+    <TypeScriptCompile Include="ACreateJS\Def.ts" />
+    <Content Include="ACreateJS\Def.js">
+      <DependentUpon>Def.ts</DependentUpon>
+    </Content>
+    <Content Include="ACreateJS\Game.js">
+      <DependentUpon>Game.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="ACreateJS\Sprites.ts" />
+    <Content Include="ACreateJS\Sprites.js">
+      <DependentUpon>Sprites.ts</DependentUpon>
+    </Content>
+    <Content Include="RVO2\AgentTreeNode.js">
+      <DependentUpon>AgentTreeNode.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="RVO2\FloatPair.ts" />
+    <TypeScriptCompile Include="RVO2\Dijkstra.ts" />
+    <Content Include="RVO2\Dijkstra.js">
+      <DependentUpon>Dijkstra.ts</DependentUpon>
+    </Content>
+    <Content Include="RVO2\FloatPair.js">
+      <DependentUpon>FloatPair.ts</DependentUpon>
+    </Content>
+    <Content Include="RVO2\KdTree.js">
+      <DependentUpon>KdTree.ts</DependentUpon>
+    </Content>
+    <Content Include="RVO2\KeyValuePair.js">
+      <DependentUpon>KeyValuePair.ts</DependentUpon>
+    </Content>
+    <Content Include="RVO2\Line.js">
+      <DependentUpon>Line.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="RVO2\Obstacle.ts" />
+    <TypeScriptCompile Include="RVO2\Multimap.ts" />
+    <Content Include="RVO2\Multimap.js">
+      <DependentUpon>Multimap.ts</DependentUpon>
+    </Content>
+    <Content Include="RVO2\Obstacle.js">
+      <DependentUpon>Obstacle.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="RVO2\RVOMath.ts" />
+    <TypeScriptCompile Include="RVO2\ObstacleTreeNode.ts" />
+    <Content Include="RVO2\ObstacleTreeNode.js">
+      <DependentUpon>ObstacleTreeNode.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="RVO2\RoadmapVertex.ts" />
+    <Content Include="RVO2\RoadmapVertex.js">
+      <DependentUpon>RoadmapVertex.ts</DependentUpon>
+    </Content>
+    <Content Include="RVO2\RVOMath.js">
+      <DependentUpon>RVOMath.ts</DependentUpon>
+    </Content>
+    <Content Include="RVO2\Vector2.js">
+      <DependentUpon>Vector2.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="RVO2\Vector2.ts" />
+    <TypeScriptCompile Include="RVO2\Agent.ts" />
+    <Content Include="RVO2\Agent.js">
+      <DependentUpon>Agent.ts</DependentUpon>
+    </Content>
+    <Content Include="app.css" />
+    <Content Include="default.htm" />
+    <TypeScriptCompile Include="RVO2\Simulator.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Rvo2_JS</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49222</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50891/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES3</TypeScriptTarget>
+    <TypeScriptIncludeComments>true</TypeScriptIncludeComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptTarget>ES3</TypeScriptTarget>
+    <TypeScriptIncludeComments>false</TypeScriptIncludeComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" />
+</Project>
